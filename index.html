@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///Users/rachelogrady/Downloads/bday-card.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+  </head>
+  <body>
+    <style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Courier New, monospace;
+  font-size: large;
+  font-weight: bold;
+}
+body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F11%2FCycling-Wallpaper-Full-HD.jpg&f=1&nofb=1&ipt=b6b31da0107dd43cf63247595e57a667288a459497f888449ea836c606381cf0&ipo=images");
+    
+}
+.card {
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  transition: 1s;
+}
+.card:hover .outside {
+  transform: rotateY(-130deg);
+}
+.outside,
+.inside {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 50.1%;
+}
+.inside {
+  background: linear-gradient(to right, #2e4ae9, #465ee9 25%);
+  line-height: 1.5;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  left: 50%;
+}
+.outside {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 1;
+  transform-origin: left;
+  transition: 2s;
+  cursor: pointer;
+}
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+.front {
+  background-color: #465ee9;
+}
+.back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to left, #2e4ae9, #465ee9 25%);
+}
+.happy {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #dbd818;
+}
+.bday {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #dbd818;
+}
+.sis {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #dbd818;
+}
+.inside h1 {
+  font-size: 120px;
+  line-height: 120px;
+}
+.inside p {
+  font-size: 16px;
+  color: #dbd818;
+}
+.radioh {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.pig {
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    </style>
+    <div class="card">
+      <div class="outside">
+        <div class="front">
+          <p class="happy">Happy</p>
+          <p class="bday">Birthday</p>
+          <p class="sis">Dad!!</p>
+          <div class="cake">
+            <img class="radioh" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2017%2F03%2FCycling-Transparent.png&f=1&nofb=1&ipt=1c8a83ce3133c99b8c6f7d8102879ef085351a80ed79275663e654f9815b1db2&ipo=images">
+          </div>
+        </div>
+        <div class="back"></div>
+      </div>
+      <div class="inside">
+        <p>Dear Dad, Happy Birthday!!! I hope you have an amazing day, 
+            sorry I won't be there to celebrate with you but can't wait to be home soon and see you! 
+            Looking forward to our half marathon training together hehe,
+            lots and lots of love, Rachee xxx
+        </p>
+        <h1>
+            <img class="pig" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F516b006072f050ba0afb7f4e22f237f4%2Ftenor.gif%3Fitemid%3D5696700&f=1&nofb=1&ipt=7435855bdc622459426ec836dbbe860697499236b1e0ce6c7fe05f62a7756e91&ipo=images">
+        </h1>
+        <p>YOU^^</p>
+      </div>
+    </div>
+  
+</body></html>
